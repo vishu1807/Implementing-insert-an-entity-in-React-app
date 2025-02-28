@@ -1,5 +1,3 @@
-// src/booksData.js
-
 const books = [
   {
     id: 1,

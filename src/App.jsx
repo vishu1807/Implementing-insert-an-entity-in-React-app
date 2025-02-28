@@ -1,14 +1,15 @@
-// src/App.jsx
-
-import React from 'react';
-import Home from './Home';
-import './App.css'; // Import global styles
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./Home";
+import AddBook from "./components/AddBook";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/add-book" element={<AddBook />} />
+    </Routes>
   );
 }
 
